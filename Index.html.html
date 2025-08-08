@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheet.css">
+  </head>
+  <body>
+    
+      <!-- top nav -->
+      <nav class="top-nav d-flex align-items-center position-sticky">
+        <div class="brand-name ms-3">
+            <img src="logo.png" alt="brand-logo">
+            <a href="#"><i class="fa-solid fa-desktop nav-icon ms-3" id="nav-icon-desktop"></i></a>
+            <a href="#"><i class="fa-solid fa-tablet-screen-button nav-icon"></i></a>
+            <a href="#"><i class="fa-solid fa-mobile-screen-button nav-icon"></i></a>
+        </div>
+        <div class="brand-link d-flex align-items-center">
+            <a href="#"></a><i class="fa-solid fa-less-than me-3 nav-icon"></i>
+            <strong>ZenBlog</strong>
+            <a href="#"><i class="fa-solid fa-greater-than ms-3 nav-icon"></i></a>
+        </div>
+        <div class="brand-btn d-flex justify-content-end align-items-center">
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square nav-icon"></i></a>
+            <div class="download-btn bg-primary p-2 d-flex justify-content-end">
+                <a href="#" class="text-white"><i class="fa-solid fa-download me-2"></i>Download</a>
+            </div>
+        </div>
+    </nav>
+
+   <!-- end top nav -->
+
+   <!-- crousel -->
+
+    <section class="container" style="width: 1250px;">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="win.jpg" class="d-block w-100 p-5  img-fluid object-fit-cover" style="height: 600px;" alt="background">
+            <div class="carousel-caption d-flex d-md-inline  " style="height: 250px; width: 600px;">
+              <h3>13 Amazing Poems from Shel Silverstein with valuable life lessons </h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi quasi provident, consectetur fuga laborum soluta quis voluptatem, atque doloribus saepe cumque minima. Totam placeat, sed sit iste eveniet est?.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="bond.jpg" class="d-block w-100 p-5 img-fluid object-fit-cover"  style=" height: 600px;" alt="background">
+            <div class="carousel-caption d-none d-md-block " style="height: 250px; width: 600px;" >
+              <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi quasi provident, consectetur fuga laborum soluta quis voluptatem, atque doloribus saepe cumque minima. Totam placeat, sed sit iste eveniet est?.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ipad.jpg" class="d-block w-100 p-5 img-fluid object-fit-cover" style="height: 600px;" alt="background">
+            <div class="carousel-caption d-none d-md-block" style="height: 250px; width: 600px;">
+              <h2>The Best Homemade Masks for Face (keep the Pimples Away)</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi quasi provident, consectetur fuga laborum soluta quis voluptatem, atque doloribus saepe cumque minima. Totam placeat, sed sit iste eveniet est?.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="iphone.jpg" class="d-block w-100 p-5 img-fluid object-fit-cover" style="height: 600px;" alt="background">
+            <div class="carousel-caption d-none d-md-block" style="height: 250px; width: 600px;">
+              <h2>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi quasi provident, consectetur fuga laborum soluta quis voluptatem, atque doloribus saepe cumque minima. Totam placeat, sed sit iste eveniet est?.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- end crousel -->
+
+    <!-- top grid -->
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-12  col-md-4 col-lg-3">
+          <img src="dog.jpg" class="img-fluid object-fit-contain py-1" style="height: 300px;width: 500px;" alt="Img">
+          <p class="link-secondary pt-1" style="font-size: 13px;">Culture • Jul 5th '22</p>
+          <a href="#" class="text-decoration-none"><h2 class="link-secondary">11 Work From Home Part-Time Jobs You Can Do Now</h2></a>
+          <p class="link-dark" style="font-size: 14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium dignissimos</p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <img src="hand.jpg" class="img-fluid object-fit-contain " style="height: 235px;" alt="img2">
+          <p class="link-secondary" style="font-size: 13px;">Sport • Jul 5th '22</p>
+          <a href="" class="text-decoration-none"> <h5 class="link-secondary ">Let’s Get Back to Work, New York</h5></a>
+          <img src="win.jpg" class="img-fluid object-fit-contain" style="height: 235px;" alt="img2-1">
+          <p class="link-secondary" style="font-size: 13px;">Food • Jul 17th '22</p>
+          <a href="" class="text-decoration-none"><h5 class="link-secondary ">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+          <img src="mirror.jpg" class="img-fluid object-fit-contain " style="height: 235px;" alt="img2-2">
+           <p class="link-secondary" style="font-size: 13px;">Design • Mar 15th '22</p>
+           <a href="" class="text-decoration-none"><h5 class="link-secondary">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</h5></a>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <img src="ipad.jpg" class="img-fluid object-fit-contain" style="height: 235px;" alt="img3">
+          <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+          <a href="" class="text-decoration-none"><h5 class="link-secondary">6 Easy Steps To Create Your Own Cute Merch For Instagram</h5></a>
+          <img src="bond.jpg" class="img-fluid object-fit-contain" style="height: 235px;" alt="img3-1">
+          <p class="link-secondary" style="font-size: 13px;">Tech • Mar 1st '22</p>
+          <a href="" class="text-decoration-none"><h5 class="link-secondary">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+          <img src="girl.jpg" class="img-fluid object-fit-contain" style="height: 235px;" alt="img3-1">
+          <p class="link-secondary" style="font-size: 13px;">Travel • Jul 5th '22</p>
+          <a href="" class="text-decoration-none"><h5 class="link-secondary">5 Great Startup Tips for Female Founders</h5></a>
+        </div>
+        <div class="col-12 col-md-2 col-lg-3 pt-5 p-3 ">
+           <ul class="list-group"> 
+            <li class="list-group-item"><h3>Trending</h3></li>
+            <li class="list-group-item"><a href="#" class="link-dark text-decoration-none" style="font-size: 13px;">The Best Homemade Masks for Face (keeps the Pimples Away)</a>
+              <p class="link-secondary" style="font-size: 13px;">Jane Cooper</p>
+            </li>
+            <li class="list-group-item"><a href="#" class="link-dark text-decoration-none" style="font-size: 14px;">17 Pictures of Medium Lenght Hair in Layers That Will Inspire Your New Haircut</a>
+              <p class="link-secondary" style="font-size: 13px;">Wade Warren</p></li>
+            <li class="list-group-item"><a href="#" class="link-dark text-decoration-none" style="font-size: 14px;">13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</a>
+            <p class="link-secondary" style="font-size: 13px;">Esther Howard</p></li>
+            <li class="list-group-item"><a href="#" class="link-dark text-decoration-none" style="font-size: 14px;">9 Half-up/half-drown Hairstyles for Long and Medium hair</a>
+            <p class="link-secondary" style="font-size: 13px;">Cameron williamson</p></li>
+            <li class="list-group-item"><a href="#" class="link-dark text-decoration-none" style="font-size: 14px;">Life Insurance And Pregnancy: A Working Mom's Guide</a>
+            <p class="link-secondary" style="font-size: 13px;">Jenny Wilson</p></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+
+<!-- culture section -->
+
+     <div class="container p-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="link-secondary">CULTURE</h2>
+        <a href="" class="link-secondary">SEE ALL CULTURE</a>
+      </div>
+      <hr>
+      <div class="container pt-3">
+        <div class="row">        
+          <div class="col-12 col-lg-8">
+            <div class="row g-4">      
+            <div class="col-12 d-flex flex-column flex-md-row">
+              <img src="bond.jpg" alt="img" class="img-fluid object-fit-contain" style="height: 320px;">
+              <div class="px-3 col-lg-4">
+              <p class="link-secondary" style="font-size:13px;">Culture • Jul 5th '22</p>
+              <a href="#" class="text-decoration-none"><h5 class="link-secondary">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium </p>
+              <p class="link-dark px-4" style="font-size: 13px;">Wade Warren</p>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="row">
+          <div class="col-12 col-md-4 col-lg-4" style="padding-top: -50px; margin-top: -100px;">
+          <div class="coul4">
+          <img src="dog.jpg" alt="img2" class="img-fluid object-fit-contain" style="height: 340px;">
+          <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+          <a href="#" class="text-decoration-none"><h5 class="link-secondary">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+          <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+          <p class="link-dark" style="font-size: 14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus</p>
+          <hr>
+          <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+          <a href="" class="text-decoration-none"><h5 class="link-secondary">5 Great Startup Tips for Female Founders</h5></a>
+          <p class="link-secondary">Jenny Wilson</p>
+      </div>
+      </div>
+          <div class="col-12 col-md-6 px-6">
+            <div class="coul2">
+              <img src="hand.jpg" alt="img" class="img-fluid object-fit-contain">
+              <p class="link-secondary pt-3" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="#" class="text-decoration-none"><h5 class="link-secondary">11 Work From Home Part-Time Jobs You Can Do Now</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <p class="link-dark" style="font-size: 14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus</p>
+          </div>
+         </div>
+        </div>
+       </div>
+   </div>
+  </div>
+       <div class="col-12 col-md-3 col-lg-3 ps-4">
+          <div class="coul3">
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">9 Half-up/half-down Hairstyles for Long and Medium Hair</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">Life Insurance And Pregnancy: A Working Mom’s Guide</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">The Best Homemade Masks for Face (keep the Pimples Away)</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+              <p class="link-secondary" style="font-size: 13px;">Culture • Jul 5th '22</p>
+              <a href="" class="text-decoration-none"><h5 class="link-secondary">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+              <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+              <hr>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- end culture sec -->
+
+<!-- business section -->
+
+     <div class="container p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="link-secondary">Business</h1>
+        <a href="" class="link-secondary">SEE ALL BUISNESS</a>
+      </div>
+      <hr>
+
+      <div class="container pt-5">
+        <div class="row">
+        <div class="col-12 col-lg-3 mb-4">
+            <div>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr/>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr/>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">9 Half-up/half-down Hairstyles for Long and Medium Hair</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr/>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">Life Insurance And Pregnancy: A Working Mom’s Guide</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr/>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">The Best Homemade Masks for Face (keep the Pimples Away)</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr/>
+            <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+            <a href="#" class="text-decoration-none"><h5 class="link-secondary">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+            <p class="link-dark" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            </div>
+        </div>
+        <div class="col-12 col-lg-9 mb-4">
+            <div class="row">
+            <div class="col-12 d-md-flex">
+                <img src="ipad.jpg" alt="Main Image" class="img-fluid object-fit-contain mb-3 mb-md-0" style="height: 300px; max-width: 100%;" />
+                <div class="ps-md-3">
+                <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+                <a href="#" class="text-decoration-none"><h4 class="link-secondary">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</h4></a>
+                <p class="link-dark" style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore...</p>
+                <p class="link-dark pt-2" style="font-size: 13px;">Wade Warren</p>
+                </div>
+            </div>
+            </div>
+            <div class="row pt-2">
+            <div class="col-12 col-md-4 mb-4">
+                <img src="win.jpg" alt="Win Image" class="img-fluid object-fit-contain" style="height: 200px;" />
+                <p class="link-secondary pt-2" style="font-size: 13px;">Business • Jul 5th '22</p>
+                <a href="#" class="text-decoration-none"><h5 class="link-secondary">11 Work From Home Part-Time Jobs You Can Do Now</h5></a>
+                <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+                <p class="link-dark py-2" style="font-size: 14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus</p>
+                <hr />
+                <p class="link-secondary" style="font-size: 13px;">Business • Jul 5th '22</p>
+                <a href="#" class="text-decoration-none"><h5 class="link-secondary">5 Great Startup Tips for Female Founders</h5></a>
+                <p class="link-dark" style="font-size: 13px;">Jenny Wilson</p>
+            </div>
+            <div class="col-12 col-md-8 mb-4">
+                <img src="mirror.jpg" alt="Mirror Image" class="img-fluid object-fit-contain" style="height: 350px;" />
+                <p class="link-secondary pt-2" style="font-size: 13px;">Business • Jul 5th '22</p>
+                <a href="#" class="text-decoration-none"><h5 class="link-secondary">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+                <p class="link-secondary" style="font-size: 13px;">Jenny Wilson</p>
+                <p class="link-dark py-1" style="font-size: 14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+<!-- end business section -->
+
+
+<!-- lifestyle sec -->
+
+      <div class="container p-3">
+        <div class="d-flex justify-content-between align-items-center">
+        <h1 class="link-secondary">Lifestyle</h1>
+        <a href="" class="link-secondary">See all Lifestyle</a>
+        </div>
+        <hr>
+
+        <div class="row pt-5">
+          <div class="col-12 col-md-3 col-lg-3">
+            <img src="girl.jpg" alt="img" class="img-fluid object-fit-contain">
+            <p class="link-secondary pt-3" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h1 class="link-secondary" style="font-size: 35px;">11 Work From Home Part-Time Jobs You Can Do Now</h1></a>
+            <p class="link-secondary pt-2" style="font-size: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium dignissimos</p>
+            <p class="link-dark" style="font-size: 14px;">Esther Howard</p>
+            <p class="link-secondary pt-3" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">The Best Homemade Masks for Face (keep the Pimples Away)</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+          </div>
+
+          <div class="col-12 col-md-3 col-lg-3">
+            <img src="bond.jpg" alt="bond" class="img-fluid object-fit-contain">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">Let’s Get Back to Work, New York</h5></a>
+            <img src="win.jpg" alt="win" class="img-fluid object-fit-contain pt-4">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Jul 17th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+            <img src="iphone.jpg" alt="img" class="img-fluid object-fit-contain pt-4">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Mar 15th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</h5></a>
+          </div>
+
+          <div class="col12 col-md-3 col-lg-3" style="width: 260px;">
+            <img src="ipad.jpg" alt="img" class="img-fluid object-fit-contain">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">6 Easy Steps To Create Your Own Cute Merch For Instagram</h5></a>
+            <img src="hand.jpg" alt="img" class="img-fluid object-fit-contain pt-4">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Mar 1st '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+            <img src="dog.jpg" alt="img" class="img-fluid object-fit-contain pt-4">
+            <p class="link-secondary pt-4" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary" style="font-size: 18px;">5 Great Startup Tips for Female Founders</h5></a>
+          </div>
+
+          <div class="col-12 col-md-3 col-lg-3" style="width: 260px;">
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">How to Avoid Distraction and Stay Focused During Video Calls?</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">9 Half-up/half-down Hairstyles for Long and Medium Hair</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">Life Insurance And Pregnancy: A Working Mom’s Guide</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">The Best Homemade Masks for Face (keep the Pimples Away)</h5></a>
+            <p class="link-dark pt-2" style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+            <p class="link-secondary" style="font-size: 13px;">Lifestyle • Jul 5th '22</p>
+            <a href="" class="text-decoration-none"><h5 class="link-secondary">10 Life-Changing Hacks Every Working Mom Should Know</h5></a>
+            <p class="link-dark pt-2"  style="font-size: 14px;">Jenny Wilson</p>
+            <hr>
+          </div>
+        </div>
+
+        <!-- end lifestyle sec -->
+        
+        <!-- footer sec -->
+
+        <footer class="container-fluid bg-black text-light py-5">
+          <div class="container-fluid">
+            <div class="row gy-4">
+        
+              <div class="col-12 col-md-3">
+                <h4>ZenBlog</h4>
+                <p class="mb-2">
+                  A108 Adam Street<br>
+                  New York, NY 535022
+                </p>
+                <p class="mb-2">
+                  Phone: +1 5589 55488 55<br>
+                  Email: info@example.com
+                </p>
+              </div>
+        
+              <div class="col-6 col-md-2">
+                <h6>Useful Links</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Home</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">About</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Services</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Terms of Service</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Privacy Policy</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2">
+                <h6>Our Services</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Web Design</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Web Development</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Product Management</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Marketing</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Graphic Design</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2">
+                <h6>Helpful Resources</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Molestiae accusamus iure</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Excepturi dignissimos</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Suscipit distinctio</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Dilecta</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Sit quas consectetur</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2">
+                <h6>Nobis Illum</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Ipsam</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Laudantium dolorum</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Dinera</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Trodelas</a></li>
+                  <li><a href="#" class="text-light text-decoration-none d-block py-1">Flexo</a></li>
+                </ul>
+              </div>
+        
+            </div>
+        
+            <hr class="text-light my-4">
+        
+            <div class="text-center">
+              <p class="mb-1">© Copyright All Rights Reserved</p>
+              <p>Designed by <a href="#" class="fw-bold text-light text-decoration-none">BootstrapMade</a></p>
+            </div>
+        
+          </div>
+        </footer>
+
+        <!-- end footersec -->
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
